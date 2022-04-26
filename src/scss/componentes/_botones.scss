@@ -1,0 +1,45 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+.boton{
+    @include m.boton(v.$azul, v.$blanco);
+    
+
+    
+}
+
+.boton-panel{
+    @include m.boton-panel(v.$azul, v.$blanco);
+    
+
+    
+}
+
+
+
+
+
+
+.boton-verde {
+    @include m.boton(v.$verde, v.$blanco);
+}
+
+.boton-act {
+    @include m.boton-act(v.$verde, v.$blanco);
+    margin-right: 1.5rem
+}
+
+.boton-cerrar{
+    @include m.boton-cerrar(v.$rojo, v.$blanco);
+    border-radius: 1rem;
+}
+
+
+.boton-verde-block {
+    @include m.boton(v.$verde2, v.$blanco);
+}
+
+.boton-elim {
+    @include m.boton-elim(v.$rojo, v.$blanco);
+}

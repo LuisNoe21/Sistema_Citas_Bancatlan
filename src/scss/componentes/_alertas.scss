@@ -1,0 +1,67 @@
+
+@use 'base/variables' as v;
+
+.alerta{
+padding: calc(v.$separacion / 5);
+color: v.$blanco;
+width: 98%;
+display: block;
+margin:10rem 0;
+
+
+&.error{ // el asperson da a entender que si esta presente dicha clase se ejecutara este codigo
+    background-color: lighten(v.$rojo, 40%);
+    border-left: .5rem solid v.$rojo;
+    text-align: center;
+    font-weight: v.$bold;
+    text-transform: uppercase;
+    color: v.$rojo;
+    margin: 1rem;
+
+
+
+
+    
+}
+
+&.error-token{ // el asperson da a entender que si esta presente dicha clase se ejecutara este codigo
+    background-color: lighten(v.$rojo, 40%);
+    border-left: .5rem solid v.$rojo;
+    text-align: center;
+    font-weight: v.$bold;
+    text-transform: uppercase;
+    color: v.$rojo;
+    margin: 8rem 0;
+    
+}
+
+
+&.notificacion{ 
+    background-color: lighten($color: v.$verde2, $amount: 50%);
+    border-left: .5rem solid v.$verde2;
+    color: v.$verde2;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: v.$bold;
+    text-transform: uppercase;
+
+    
+}
+
+
+
+&.exito{ 
+    
+        background-color: lighten($color: v.$verde2, $amount: 50%);
+        border-left: .5rem solid v.$verde2;
+        color: v.$verde2;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: v.$bold;
+        text-transform: uppercase;
+
+    
+}
+}
+
+
